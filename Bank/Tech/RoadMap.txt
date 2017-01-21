@@ -1,0 +1,7 @@
+About learning a language
+1: the language grammar, function, lib, extension etc
+2: develop web/app with framework
+
+-----actually below it's beyond language scope-----
+3: know about design pattern
+4: develop big/distributed system with multi servers (distributed compute/storage, lbs, HA, etc...)
