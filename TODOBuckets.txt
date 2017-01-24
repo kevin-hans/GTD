@@ -4,14 +4,12 @@
 二是保证新发布不影响既有功能；
 三是可在服务不停顿地情况下发布。
 
-2. Think about the platform of selfpromotion
-
-3. 時（とき、じ）、後（ご、あと）の発音場合
+2. OLTP,OLAP概念
 
 
 #Doing
 4: design pattern
-
+2. Think about the platform of selfpromotion
 
 #Done
 1: HTTPS升级

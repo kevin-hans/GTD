@@ -1,0 +1,30 @@
+GOAL
+    id
+    description
+    level:life/5year/1year/1month
+    parent
+    sibling_left
+    sibling_right
+    status: realized/fighting/looking
+    tag
+
+
+PROJECT
+    id
+    description
+    status:start/plan/do/end
+    due_date
+    mile_stone
+    belongto: goal_id
+
+
+ACTIVITY
+    id
+    description
+    status:todo/doing/done
+    due_date
+    belongto: project_id
+
+
+
+

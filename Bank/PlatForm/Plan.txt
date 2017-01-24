@@ -1,0 +1,7 @@
+
+W0:
+story: build the model, usecase
+
+W1:
+story: user input it's goal.
+story: user input the project info for its goal.
