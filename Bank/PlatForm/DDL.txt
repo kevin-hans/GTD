@@ -1,48 +1,46 @@
+CREATE TABLE ROLES (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+detail VARCHAR(140) NOT NULL
+)ENGINE=InnoDB;
 
 
 
-ROLE
-    id
-    description
+CREATE TABLE TARGETS (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+detail VARCHAR(140) NOT NULL,
+level SMALLINT NOT NULL,
+status SMALLINT NOT NULL,
+point INT NOT NULL,
+parent_id INT NULL
+)ENGINE=InnoDB;
 
 
-TARGET
-    id
-    description
-    level:life/5year/1year/1month
-    parent
-    status: realized/fighting/looking
-    tag
+CREATE TABLE PROJECTS (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+detail VARCHAR(140) NOT NULL,
+status SMALLINT NOT NULL,
+due_date DATETIME NOT NULL,
+point INT NOT NULL,
+rule_id INT NOT NULL
+)ENGINE=InnoDB;
 
 
-PROJECT
-    id
-    description
-    status:start/plan/do/end
-    due_date
-    mile_stone
-    belongto: goal_id
+CREATE TABLE STORY (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+detail VARCHAR(140) NOT NULL,
+status SMALLINT NOT NULL,
+due_date DATETIME NOT NULL,
+point INT NOT NULL,
+prj_id INT NOT NULL
+)ENGINE=InnoDB;
 
-
-STORY
-    id
-    description
-    status toding/doing/done
-    due date
-    role_id
-    goal_id
-
-ACTIVITY
-    id
-    description
-    status:todo/doing/done
-    due_date
-    belongto: project_id
-
-
-
-CREATE TABLE GOAL (
-id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-category byte,
-description VARCHAR(100),
+    
+CREATE TABLE ACTIVITY (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+detail VARCHAR(140) NOT NULL,
+start_time DATETIME NOT NULL,
+end_time DATETIME NOT NULL,
+point INT  NOT NULL,
+story_id INT NOT NULL
+)ENGINE=InnoDB;
 
