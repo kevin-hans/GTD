@@ -1,10 +1,16 @@
-GOAL
+
+
+
+ROLE
+    id
+    description
+
+
+TARGET
     id
     description
     level:life/5year/1year/1month
     parent
-    sibling_left
-    sibling_right
     status: realized/fighting/looking
     tag
 
@@ -18,6 +24,14 @@ PROJECT
     belongto: goal_id
 
 
+STORY
+    id
+    description
+    status toding/doing/done
+    due date
+    role_id
+    goal_id
+
 ACTIVITY
     id
     description
@@ -27,4 +41,8 @@ ACTIVITY
 
 
 
+CREATE TABLE GOAL (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+category byte,
+description VARCHAR(100),
 
